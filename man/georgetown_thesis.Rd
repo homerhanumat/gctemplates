@@ -22,7 +22,7 @@ Senior Thesis LaTeX template and cls files.
 \examples{
 \dontrun{
  output:
-   georgetowntemplates::georgetown_thesis:
+   gctemplates::georgetown_thesis:
      toc: true
 }
 }

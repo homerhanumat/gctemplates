@@ -1,4 +1,4 @@
-#' georgetowntemplates: A package for creating documents using R Markdown
+#' gctemplates: A package for creating documents using R Markdown
 #'
 #' The georgetowntemplates package provides three important functions:
 #' georgetown_thesis, label, and ref.
@@ -10,5 +10,5 @@
 #' @section ref:
 #' Allows references to be made to labelled objects inline in the document
 #' @docType package
-#' @name georgetowntemplates
+#' @name gctemplates
 NULL

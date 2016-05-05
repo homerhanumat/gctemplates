@@ -11,7 +11,7 @@
 #' @examples
 #' \dontrun{
 #'  output:
-#'    georgetowntemplates::georgetown_thesis:
+#'    gctemplates::georgetown_thesis:
 #'      toc: true
 #' }
 georgetown_thesis <- function(toc = TRUE, toc_depth = 3){#,
