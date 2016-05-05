@@ -303,7 +303,7 @@
     A Thesis \\
     Presented to \\
     \@thedivisionof \ \@division \\
-    Reed College
+    Georgetown College
     \vfil
     \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
     \vfil
