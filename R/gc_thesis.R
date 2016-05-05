@@ -1,22 +1,22 @@
 #' Creates an R Markdown PDF Thesis document
 #'
-#' This is a function called in output in the YAML of the driver Rmd file to specify using the Reed
+#' This is a function called in output in the YAML of the driver Rmd file to specify using the Georgetown
 #' Senior Thesis LaTeX template and cls files.
 #'
 #' @export
 #' @param toc A Boolean (TRUE or FALSE) specifying where table of contents should be created
 #' @param toc_depth A positive integer
-#' @return A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
+#' @return A modified \code{pdf_document} based on the Georgetown Senior Thesis LaTeX
 #'   template
 #' @examples
 #' \dontrun{
 #'  output:
-#'    reedtemplates::reed_thesis:
+#'    georgetowntemplates::georgetown_thesis:
 #'      toc: true
 #' }
-reed_thesis <- function(toc = TRUE, toc_depth = 3){#,
+georgetown_thesis <- function(toc = TRUE, toc_depth = 3){#,
   #type = "pdf") {
-  template <- find_resource("reed_thesis", "template.tex")
+  template <- find_resource("georgetown_thesis", "template.tex")
 
 #  if(type == "pdf"){
     base <- rmarkdown::pdf_document(template = template,
@@ -54,7 +54,7 @@ reed_thesis <- function(toc = TRUE, toc_depth = 3){#,
     # base$knitr$knit_hooks$output  <- hook_output
     # base$knitr$knit_hooks$message <- hook_output
     # base$knitr$knit_hooks$warning <- hook_output
-    base$knitr$knit_hooks$plot <- knitr:::hook_plot_tex
+    base$knitr$knit_hooks$plot <- knitr::hook_plot_tex
 
     base
 #  }
@@ -95,8 +95,8 @@ reed_thesis <- function(toc = TRUE, toc_depth = 3){#,
 #'   features
 #' @examples
 #' \dontrun{
-#'  label(path = "figure/reed.jpg", caption = "Reed logo",
-#'        label = "reed", type = "figure")
+#'  label(path = "figure/georgetown.jpg", caption = "georgetown logo",
+#'        label = "georgetown", type = "figure")
 #' }
 label <- function(path = NULL,
                   caption = "Default caption",

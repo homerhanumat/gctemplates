@@ -1,11 +1,15 @@
-Package: reedtemplates
+Package: gctemplates
 Type: Package
-Title: Provides R Markdown templates
-Version: 1.0
-Date: 2015-10-29
-Author: Chester Ismay
-Maintainer: Chester Ismay <cismay@reed.edu>
-Description: This package will contain a variety of different templates for journals, classroom projects, theses, books, etc.  Currently, only the Reed College Senior Thesis template is available.
+Title: R Markdown Templates for Georgetown College
+Version: 0.1
+Date: 2016-04-05
+Author: Chester Ismay (original for Reeed College), Homer White (modifying for
+    Georgetown College)
+Maintainer: Homer White <hwhite0@georgetowncollege.edu>
+Description: This package attempts to provide a template for Senior Theses at
+    Georgetown College.
 License: GPL-3
 Imports:
+    knitr,
     rmarkdown
+RoxygenNote: 5.0.1
